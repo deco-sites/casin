@@ -31,8 +31,7 @@ function Newsletter() {
           Cadastre-se
         </span>
         <span class="text-sm text-primary-content">
-          Fique por dentro das novidades e ganhe 15% de desconto na primeira
-          compra. Para mais informações clique aqui.
+          Junte-se a Nossa comunidade e Receba atualiazações semanais sobre o que estamos fazendo
         </span>
       </div>
       <form
@@ -42,7 +41,7 @@ function Newsletter() {
         <div class="input-group">
           <input
             name="email"
-            class="flex-grow input input-primary"
+            class="flex-grow input bg-info"
             placeholder="Seu e-mail"
           />
           <button class="btn disabled:loading" disabled={loading}>

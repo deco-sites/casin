@@ -26,6 +26,7 @@ export interface NavItem {
 }
 
 export interface Props {
+  isActiveIcons: boolean;
   alerts: string[];
   /** @title Search Bar */
   searchbar?: SearchbarProps;
@@ -54,6 +55,7 @@ function Header(
     products,
     navItems = [],
     suggestions,
+    isActiveIcons
   }: Props,
 ) {
   const searchbar = { ..._searchbar, products, suggestions };
@@ -62,12 +64,13 @@ function Header(
       <header style={{ height: headerHeight }}>
         <div class="bg-base-100 fixed w-full z-50">
           <Alert alerts={alerts} />
-          <Navbar items={navItems} searchbar={searchbar} />
+          <Navbar items={navItems} searchbar={searchbar} isActiveIcons={isActiveIcons}/>
         </div>
 
         <Modals
           menu={{ items: navItems }}
           searchbar={searchbar}
+          isActiveIcons={isActiveIcons}
         />
       </header>
     </>

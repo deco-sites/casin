@@ -76,13 +76,13 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
       </Picture>
       {action && (
         <div class="absolute top-0 bottom-0 m-auto left-0 right-0 sm:right-auto sm:left-[12%] max-h-min max-w-[235px] flex flex-col gap-4 p-4 rounded glass">
-          <span class="text-6xl font-medium text-base-100">
+          <span class="text-6xl font-medium text-primary">
             {action.title}
           </span>
-          <span class="font-medium text-xl text-base-100">
+          <span class="font-medium text-xl text-primary">
             {action.subTitle}
           </span>
-          <Button class="glass">{action.label}</Button>
+          <Button class="glass text-info hover:bg-accent">{action.label}</Button>
         </div>
       )}
     </a>

@@ -6,7 +6,8 @@ import { navbarHeight } from "./constants.ts";
 import type { INavItem } from "./NavItem.tsx";
 import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 
-function Navbar({ items, searchbar }: {
+function Navbar({ items, searchbar,isActiveIcons }: {
+  isActiveIcons?: boolean;
   items: INavItem[];
   searchbar: SearchbarProps;
 }) {
@@ -21,30 +22,32 @@ function Navbar({ items, searchbar }: {
 
         <a
           href="/"
-          class="flex-grow inline-flex items-center"
+          class={`inline-flex flex-shrink w-fit items-center justify-center shadow-lg bg-transparent shadow-blue-800/50`}
           style={{ minHeight: navbarHeight }}
           aria-label="Store logo"
         >
           <Icon id="Logo" width={126} height={16} />
         </a>
-
-        <div class="flex gap-1">
+        {isActiveIcons && (
+          <div class="flex gap-1">
           <Buttons variant="search" />
           <Buttons variant="cart" />
         </div>
+        )}
       </div>
 
       {/* Desktop Version */}
       <div class="hidden md:flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6">
         <div class="flex-none w-44">
-          <a href="/" aria-label="Store logo" class="block px-4 py-3 w-[160px]">
+          <a href="/" aria-label="Store logo" class="relative block px-4 py-3 w-[160px] shadow-lg bg-transparent shadow-blue-800/50">
             <Icon id="Logo" width={126} height={16} />
           </a>
         </div>
-        <div class="flex-auto flex justify-center">
+        <div class="flex-auto flex justify-end">
           {items.map((item) => <NavItem item={item} />)}
         </div>
-        <div class="flex-none w-44 flex items-center justify-end gap-2">
+        {isActiveIcons ? (
+          <div class={`flex-none w-44 flex items-center justify-end gap-2`}>
           <Buttons variant="search" />
           <Searchbar searchbar={searchbar} />
           <a
@@ -52,6 +55,7 @@ function Navbar({ items, searchbar }: {
             href="/login"
             aria-label="Log in"
           >
+            <span></span>
             <Icon id="User" width={20} height={20} strokeWidth={0.4} />
           </a>
           <a
@@ -68,6 +72,8 @@ function Navbar({ items, searchbar }: {
           </a>
           <Buttons variant="cart" />
         </div>
+        ) : (<></>)}
+        
       </div>
     </>
   );

@@ -18,10 +18,11 @@ const Searchbar = lazy(() =>
 
 interface Props {
   menu: MenuProps;
+  isActiveIcons: boolean;
   searchbar?: SearchbarProps;
 }
 
-function Modals({ menu, searchbar }: Props) {
+function Modals({ menu, searchbar,isActiveIcons }: Props) {
   const { displayCart, displayMenu, displaySearchbar } = useUI();
 
   return (
