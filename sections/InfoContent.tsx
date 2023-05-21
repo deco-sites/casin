@@ -12,7 +12,7 @@ export type Props = {
 export default function InfoContent(props: Props) {
   return (
     <>
-      <div class="container bg-info p-3 shadow-lg shadow-blue-800/50 ">
+      <div class="container bg-info p-6 mb-4 shadow-lg rounded shadow-blue-800/50 ">
         {props.text.map(({ label, paragraph }) => (
           <div class="container flex flex-col">
             <h2 class="text-3xl mb-2 font-bold">{label}</h2>

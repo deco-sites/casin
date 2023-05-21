@@ -10,13 +10,13 @@ export interface Props {
 
 export default function Banner({ src, description, title }: Props) {
   return (
-    <section class="pt-6 pb-4">
+    <section class="pt-4 pb-4">
       <div class="container mx-auto px-4">
         <div class="flex flex-wrap items-center -m-6">
           <div class="w-full md:w-1/2 p-6">
-            <div class="p-1 mx-auto max-w-max overflow-hidden rounded-full">
+            <div class="p-1 mx-auto max-w-max overflow-hidden rounded">
               <Image
-                class="object-cover rounded-full"
+                class="object-cover rounded"
                 src={src}
                 alt=""
                 width={512}

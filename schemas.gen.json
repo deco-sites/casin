@@ -94,6 +94,7 @@
               "deco-sites/casin/sections/Header.tsx",
               "deco-sites/casin/sections/Highlights.tsx",
               "deco-sites/casin/sections/InfoContent.tsx",
+              "deco-sites/casin/sections/InstagramComponent.tsx",
               "deco-sites/casin/sections/LinkTree.tsx",
               "deco-sites/casin/sections/ProductDetails.tsx",
               "deco-sites/casin/sections/ProductShelf.tsx",
@@ -8646,6 +8647,39 @@
       ],
       "title": "deco-sites/casin/sections/InfoContent.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jYXNpbi9zZWN0aW9ucy9JbnN0YWdyYW1Db21wb25lbnQudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Título do componente"
+        },
+        "fields": {
+          "type": "array",
+          "items": {},
+          "title": "Campos a serem buscados na API",
+          "description": "Documentação se encontra aqui https://developers.facebook.com/docs/instagram-basic-display-api/reference/media/"
+        },
+        "numberOfPosts": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Quantos posts deseja buscar?",
+          "description": "Número de posts que vão ser retornados"
+        },
+        "token": {
+          "type": "string",
+          "title": "Token  do facebook",
+          "description": "Esse token é pego nas configurações do APP do facebook e expira a cada 90 dias"
+        }
+      },
+      "required": [
+        "title",
+        "token"
+      ],
+      "title": "deco-sites/casin/sections/InstagramComponent.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9jYXNpbi9jb21wb25lbnRzL3VpL0xpbmtUcmVlLnRzeA==@Link": {
       "type": "object",
       "properties": {
@@ -11492,6 +11526,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jYXNpbi9zZWN0aW9ucy9JbnN0YWdyYW1Db21wb25lbnQudHN4": {
+      "title": "deco-sites/casin/sections/InstagramComponent.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXNpbi9zZWN0aW9ucy9JbnN0YWdyYW1Db21wb25lbnQudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/casin/sections/InstagramComponent.tsx"
+          ],
+          "default": "deco-sites/casin/sections/InstagramComponent.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jYXNpbi9zZWN0aW9ucy9MaW5rVHJlZS50c3g=": {
       "title": "deco-sites/casin/sections/LinkTree.tsx",
       "type": "object",
@@ -12783,6 +12838,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXNpbi9zZWN0aW9ucy9JbmZvQ29udGVudC50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXNpbi9zZWN0aW9ucy9JbnN0YWdyYW1Db21wb25lbnQudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jYXNpbi9zZWN0aW9ucy9MaW5rVHJlZS50c3g="

@@ -31,12 +31,13 @@ import * as $$$$$$$$10 from "./sections/Footer.tsx";
 import * as $$$$$$$$11 from "./sections/Header.tsx";
 import * as $$$$$$$$12 from "./sections/Highlights.tsx";
 import * as $$$$$$$$13 from "./sections/InfoContent.tsx";
-import * as $$$$$$$$14 from "./sections/LinkTree.tsx";
-import * as $$$$$$$$15 from "./sections/ProductDetails.tsx";
-import * as $$$$$$$$16 from "./sections/ProductShelf.tsx";
-import * as $$$$$$$$17 from "./sections/SearchResult.tsx";
-import * as $$$$$$$$18 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$19 from "./sections/WishlistGallery.tsx";
+import * as $$$$$$$$14 from "./sections/InstagramComponent.tsx";
+import * as $$$$$$$$15 from "./sections/LinkTree.tsx";
+import * as $$$$$$$$16 from "./sections/ProductDetails.tsx";
+import * as $$$$$$$$17 from "./sections/ProductShelf.tsx";
+import * as $$$$$$$$18 from "./sections/SearchResult.tsx";
+import * as $$$$$$$$19 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$20 from "./sections/WishlistGallery.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -190,12 +191,13 @@ const manifest = {
     "deco-sites/casin/sections/Header.tsx": $$$$$$$$11,
     "deco-sites/casin/sections/Highlights.tsx": $$$$$$$$12,
     "deco-sites/casin/sections/InfoContent.tsx": $$$$$$$$13,
-    "deco-sites/casin/sections/LinkTree.tsx": $$$$$$$$14,
-    "deco-sites/casin/sections/ProductDetails.tsx": $$$$$$$$15,
-    "deco-sites/casin/sections/ProductShelf.tsx": $$$$$$$$16,
-    "deco-sites/casin/sections/SearchResult.tsx": $$$$$$$$17,
-    "deco-sites/casin/sections/WhatsApp.tsx": $$$$$$$$18,
-    "deco-sites/casin/sections/WishlistGallery.tsx": $$$$$$$$19,
+    "deco-sites/casin/sections/InstagramComponent.tsx": $$$$$$$$14,
+    "deco-sites/casin/sections/LinkTree.tsx": $$$$$$$$15,
+    "deco-sites/casin/sections/ProductDetails.tsx": $$$$$$$$16,
+    "deco-sites/casin/sections/ProductShelf.tsx": $$$$$$$$17,
+    "deco-sites/casin/sections/SearchResult.tsx": $$$$$$$$18,
+    "deco-sites/casin/sections/WhatsApp.tsx": $$$$$$$$19,
+    "deco-sites/casin/sections/WishlistGallery.tsx": $$$$$$$$20,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$3,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$4,
     "deco-sites/std/sections/configOCC.global.tsx": i2$$$$5,
