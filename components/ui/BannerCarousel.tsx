@@ -82,7 +82,9 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           <span class="font-medium text-xl text-primary">
             {action.subTitle}
           </span>
-          <Button class="glass text-info hover:bg-accent">{action.label}</Button>
+          <Button class="glass text-info hover:bg-accent">
+            {action.label}
+          </Button>
         </div>
       )}
     </a>

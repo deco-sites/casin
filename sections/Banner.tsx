@@ -4,11 +4,11 @@ import Image from "deco-sites/std/components/Image.tsx";
 
 export interface Props {
   src: LiveImage;
-  title: string
-  description: string
+  title: string;
+  description: string;
 }
 
-export default function Banner({ src,description,title }: Props) {
+export default function Banner({ src, description, title }: Props) {
   return (
     <section class="pt-6 pb-4">
       <div class="container mx-auto px-4">

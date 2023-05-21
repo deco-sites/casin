@@ -11,7 +11,7 @@ export type iButton = {
 };
 export type Props = {
   content: string;
-  variant: "left" | "right" ;
+  variant: "left" | "right";
   button: iButton;
   date: iDate;
 };
@@ -24,8 +24,18 @@ export default function CampaignTimer(props: Props) {
           type="hidden"
           value={`${props.date.year}-${props.date.month}-${props.date.day}`}
         />
-        <p class={`md:flex-shrink-0 text-xl m-0 text-center order-1 ${props.variant == 'right'? "md:order-1": "md:order-2"}`}>{props.content}</p>
-        <ul class={`flex items-center gap-2 order-2 ${props.variant == 'left'? "md:order-1": "md:order-2"}`}>
+        <p
+          class={`md:flex-shrink-0 text-xl m-0 text-center order-1 ${
+            props.variant == "right" ? "md:order-1" : "md:order-2"
+          }`}
+        >
+          {props.content}
+        </p>
+        <ul
+          class={`flex items-center gap-2 order-2 ${
+            props.variant == "left" ? "md:order-1" : "md:order-2"
+          }`}
+        >
           <li class={`flex justify-center items-center flex-col`}>
             <p data-hour class="text-xl" />
             <span class="text-xs">Hours</span>

@@ -31,7 +31,8 @@ function Newsletter() {
           Cadastre-se
         </span>
         <span class="text-sm text-primary-content">
-          Junte-se a Nossa comunidade e Receba atualiazações semanais sobre o que estamos fazendo
+          Junte-se a Nossa comunidade e Receba atualiazações semanais sobre o
+          que estamos fazendo
         </span>
       </div>
       <form
